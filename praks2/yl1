@@ -1,0 +1,8 @@
+#!/bit/bash
+#
+# v2ljastab kasutajale tervitust
+echo -n "Tere, " # v2ljastab ilma reavahetuseta Tere,
+echo -n "User" # v2ljastab ilma reavahetuseta User
+echo "!" # v2ljasta ! ja tee reavahetus
+#
+#end
