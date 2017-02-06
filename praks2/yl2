@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# v2ljastab muljed antud aines
+#
+echo -n "Timo Jarve" # v2ljasta nimi
+echo "ISP16"# v2ljastab grupi
+echo "koik on norm" # muljed
+#
+#
