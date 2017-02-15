@@ -2,3 +2,7 @@
 #
 # muutujate kasutamise naide
 #
+#defineerime muutuja ja omistame vaartuse
+#v22rtus saadakse whoami k2sust
+kasutaja=`whoami`
+echo "Tere, $kasutaja"
