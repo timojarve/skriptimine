@@ -6,3 +6,6 @@
 #v22rtus saadakse whoami k2sust
 kasutaja=`whoami`
 echo "Tere, $kasutaja"
+#loome ja v2ljastame kellajaa
+kell=`date +'%H:$M'`
+echo "Kell on $kell"
