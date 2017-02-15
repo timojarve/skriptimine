@@ -9,3 +9,6 @@ echo "Tere, $kasutaja"
 #loome ja v2ljastame kellajaa
 kell=`date +'%H:$M'`
 echo "Kell on $kell"
+#loome ja v2ljastame kuup2eva
+kuupaev=`date +'%d. %B'`
+echo "T2na on $kuupaev"
