@@ -1,22 +1,33 @@
 #!/bin/bash
 #
 #arvu positiivsuse/negatiivsuse kontroll
-# v22rtuste kysimine
-echo -n "Sisesta arv: "
-read arv
-# kontrollime, kas arv on positiivne
-# sel juhul peab olema suurem kui 0
-if [ $arv -gt 0 ]; then
-echo "$arv on positiivne"
-#muidu on v22rtus negatiivne
-# siis peab olema v22rtus v2iksem kui 0
-elif [ $arv -lt 0 ]; then
+# kontrollime kas kasutaja sisestas k2surea kaudu yhe parameetri
+# kui mitte - trykime kasutusjuhendi v2lja
+
 #
-echo "$arv on negatiivne"
-# kui esimene tingimus
-# v6i teine tingimus ei sobinud
-# siis kasutada else osa
-else 
-echo "$arv on neutraalne"
-#if lause tuleb l6petada
+if [ $# -ne 1 ]; then
+echo "Kasutusjuhend:"
+echo "$0 number"
+echo "N2iteks: $0 5"
+# kui aga sisestatud korralikult parameeter, siis
+else
+	#sisestame v22rtused k2surea kaudu
+	arv=$1
+	#
+	# kontrollime, kas arv on positiivne
+	# sel juhul peab olema suurem kui 0
+	if [ $arv -gt 0 ]; then
+	echo "$arv on positiivne"
+	#muidu on v22rtus negatiivne
+	# siis peab olema v22rtus v2iksem kui 0
+	elif [ $arv -lt 0 ]; then
+	#
+	echo "$arv on negatiivne"
+	# kui esimene tingimus
+	# v6i teine tingimus ei sobinud
+	# siis kasutada else osa
+	else 
+	echo "$arv on neutraalne"
+	#if lause tuleb l6petada
+fi
 fi
