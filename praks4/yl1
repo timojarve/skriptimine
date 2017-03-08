@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+#arvu positiivsuse/negatiivsuse kontroll
+# v22rtuste kysimine
+echo -n "Sisesta arv: "
+read arv
+# kontrollime, kas arv on positiivne
+# sel juhul peab olema suurem kui 0
+if [ $arv -gt 0 ]
+then
+echo "$arv on positiivne"
+else 
+echo "$arv on negatiivne"
+#if lause tuleb l6petada
+fi
