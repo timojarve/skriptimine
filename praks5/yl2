@@ -1,0 +1,12 @@
+#!/bin/bash
+# paarisarvude v2ljastamine ja nende summa
+for i in {1..50}
+do
+	jaak=$((i%2))
+	if [ $jaak -eq 0 ]; then
+	echo -n "$i "
+	summa=$(($summa+$i))
+	fi
+done
+echo
+echo "Arvude summa on: $summa"
