@@ -1,11 +1,9 @@
 #!/bin/bash
-# skripti mille abil trykib v2lja 10 numbrit
-for ((i=0; i<=10; i++))
+# 10 numbrit v2lja printimine ja nende summa arvutamine
+for i in {1..10}
 do
-	if [ $i -eq 10 ]; then
-	echo -n "$i"
-	else
-	echo -n "$i, "
-	fi
+	echo -n $i
+	summa=$(($summa+$i))
 done
 echo
+echo "$i arvude summa on: $summa"
