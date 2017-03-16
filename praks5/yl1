@@ -1,9 +1,11 @@
 #!/bin/bash
-# 10 numbrit v2lja printimine ja nende summa arvutamine
+# paarisarvude v2ljastamine kymneni
 for i in {1..10}
 do
-	echo -n $i
-	summa=$(($summa+$i))
+	jaak=$((i%2))
+	if [ $jaak -eq 0 ]; then
+
+	echo -n "$i "
+	fi
 done
 echo
-echo "$i arvude summa on: $summa"
