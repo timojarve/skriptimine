@@ -1,0 +1,25 @@
+#!/bin/bash
+#
+#
+echo -e "Sisestage ridade: \c "
+read rida
+echo -e "Sisesta t2rnide arv: \c "
+read t2rn
+for (( r=1; r<=$rida; r++ ))
+do
+	echo -n "$r."
+	if [ $r -eq 1 -o $r -eq $rida ]; then
+		for (( t=1; t<=$t2rn; t++ ))
+		do
+			echo -n "* "
+		done
+	else
+		echo -n "* "
+		for (( t=2; t<$t2rn; t++ ))
+		do
+			echo -n "  "
+		done
+		echo -n "*  "
+	fi
+	echo ""
+done
