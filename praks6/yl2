@@ -1,0 +1,15 @@
+#!/bin/bash
+#sisestada ridade arv ja t2rnid
+	echo -e "Sisesta ridade arv: "
+read rida
+	echo -e "Sisesta t2rnide arv: "
+read tarn
+
+for (( r = 1 ; r <= $rida ; r++ ))
+ do echo -n "$r. " ###V2ljasta ridade number
+ 	for (( t=1 ; t <= $tarn ; t++ ))	##
+	do
+		echo -n "* " ##v2ljasta t2rnid
+	done
+echo ""
+done
