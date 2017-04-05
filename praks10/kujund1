@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+#Kolmnurk vasakult paremale
+
+for (( r=1; r<6; r++ ))
+do
+echo $r
+done
