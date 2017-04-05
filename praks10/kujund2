@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+#Kolmnurk vasakult paremale
+
+for (( r=5; r>0; r-- ))
+do
+	#trykime reanumbri ilma reavahetuseta
+	for ((v=1; v<=$r; v++))
+	do
+	#t2rnid
+	echo -n "* "
+	done
+	#kui rida l6ppeb siis reavahetus
+	echo ""
+done
