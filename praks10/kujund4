@@ -1,0 +1,23 @@
+#!/bin/bash
+#
+#Kolmnurk vasakult paremale
+
+for((r=1; r>7; r++))
+do
+	#t2rnid
+	for ((v=1; v<$((6-$r+1)); v++))
+	do
+	echo -n "  "
+	done
+	#t2pid
+	for ((v=1; v<$r; v++))
+	do
+	echo -n "+ "
+	done
+	#plussid
+	for((v=1; v<$(($r+1)); v++))
+	do
+	echo -n "+ "
+	done
+	echo
+done
