@@ -1,0 +1,23 @@
+\#!/bin/bash
+#
+echo -n "Sisesta kellaaeg: " 	##Kysib kellaaja
+read kell			##Loeb sisendi
+
+if [ $kell -lt 0 -o $kell -gt 23 ]; then	##kui on sisend negatiivne
+echo "VIGA!"
+echo "Sisesta positiivne aja vaartus!"
+out="N2iteks: 23"
+
+else
+if [ $kell -gt 6 -a $kell -lt 12 ]; then
+	out="Tere hommikust!"
+elif [ $kell -ge 12 -a $kell -lt 16 ]; then
+	out="Tere paevast!"
+elif [ $kell -ge 16 -a $kell -lt 20 ]; then
+	out="Tere ohtust!"
+else
+	out="Head ood!"
+
+fi
+fi
+echo "$out" 	##v2ljastab teate
