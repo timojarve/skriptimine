@@ -1,0 +1,26 @@
+#!/bin/bash
+##
+echo "1 - Loob faili vastava nimega"
+echo "2 - Loob faili ja teeb lahti nano tekstiredaktoriga"
+echo "3 - Exit"
+echo -n "Sisesta oma valik: "
+read option
+
+	if [ $option = 1 ]; then
+	echo "Sisesta failinimi: "
+	read -n failinimi
+	echo "$failinimi fail loodud"
+	touch $failinimi
+	elif [ $option = 2 ]; then
+	echo -n "Sisesta failinimi: "
+	read failinimi
+	touch $failinimi
+	nano $failinimi
+	elif [ $option = 3 ]; then
+	echo "TY COME AGEin"
+	exit
+
+	else
+	echo "ERROR"
+	./yl2
+fi
