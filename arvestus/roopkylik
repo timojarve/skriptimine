@@ -1,0 +1,27 @@
+#!/bin/bash
+# Autor Timo J2rve
+#Skript roopkylik
+#Lubab kasutajal sisestada kujundi ridade arvu
+#Joonistab kujundi vastavalt ridade arvust
+
+echo -n "Palun sisestage ridade arv:"
+read arv 	#loeb ridade arvu v22rtuse
+
+for ((i=1; i<$(($arv+1)); i++)) ##peamine loop m22rab mitu rida v2ljastatakse
+do
+echo -n "$i. "	##V2ljastab ridade ette numbrid
+#tyhikud printimine
+for (( t=1; t<$(($arv+1-$i+1)); t++))
+do
+	echo -n " "
+done
+#
+for (( j = $arv; j <= $arv; j++ )) ##loop t2rnide v2ljastamiseks
+do
+	for (( k = 1; k <= j; k++ ))	##t2rnide arv s6ltub ridade arvust
+	do
+		echo -n "*"
+	done
+done
+echo ""
+done
