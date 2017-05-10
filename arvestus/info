@@ -1,0 +1,14 @@
+#!/bin/bash
+#Autor Timo J2rve 
+#Skript info
+#skript tervitab sisselogitud kasutajat
+#V2ljastab kuup2eva ja kellaaja
+#V2ljastab antud kuu kalendri
+kasutaja=`whoami` 		#m22rab kasutajanime
+kuupaev=`date +"%d.%m.%y"`	#m22rab t2nase kuup2eva
+kellaaeg=`date +'%H:%M'`	#m22rab praeguse kellaaja
+echo "Tere $kasutaja! On tore sind n2ha"
+echo "T2na on $kuupaev kell $kellaaeg"
+echo				#kujunduse jaoks
+echo
+cal 				##v2ljastab kalendri
