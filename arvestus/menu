@@ -1,0 +1,26 @@
+#!/bin/bash
+##Autor Timo J2rve
+##Menu - skript mis v2ljastab kasutajale menyy ja vastavalt valikule teksti
+echo "1) steak and potatoes"
+echo "2) fish and chips"
+echo "3) soup and salad"
+echo -n "Please make a selection (1 or 2 or 3): " ##Palub valida numbri
+read option ##loeb kasutaja sisestatud v22rtuse
+
+	if [ $option = 1 ]; then ##kui valik v6rdub 1 siis
+	echo "Stick to your ribs." 	#V2ljunds6num
+	echo "Watch your cholesterol."
+	echo "Enjoy your meal!"
+	elif [ $option = 2 ]; then	##kui valik v6rdub 2 siis
+	echo "British are coming!"
+	echo "Enjoy your meal!"
+	elif [ $option = 3 ]; then	##kui valik v6rdub 3 siis
+	echo "Health foods..."
+	echo "Dieting is so boring."
+	echo "Enjoy your meal!"
+	exit 				#V2ljub skriptist
+
+	else				#kui sisestatakse mingi muu v22rtus
+	echo "Error - Please make a selection (1 or 2 or 3)"
+	./yl2				#taask2ivitab skripti
+	fi
